@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Küçük Giriş Sayfası</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <main class="page">
+    <section class="card" aria-label="Giriş formu">
+      <h1 class="card__title">Giriş Yap</h1>
+      <p class="card__subtitle">Devam etmek için bilgilerinizi girin.</p>
+
+      <form id="loginForm" novalidate>
+        <div class="field">
+          <label for="username" class="label">E-posta veya kullanıcı adı</label>
+          <input id="username" name="username" type="text" autocomplete="username" class="input" placeholder="ornek@site.com" required />
+          <p id="usernameHelp" class="help">Demo: demo veya demo@site.com</p>
+        </div>
+
+        <div class="field">
+          <div class="label-row">
+            <label for="password" class="label">Parola</label>
+            <button type="button" id="togglePassword" class="link-button" aria-controls="password" aria-label="Parolayı göster">Göster</button>
+          </div>
+          <input id="password" name="password" type="password" autocomplete="current-password" class="input" placeholder="••••••••" required />
+        </div>
+
+        <div class="row">
+          <label class="checkbox">
+            <input id="rememberMe" type="checkbox" />
+            <span>Beni hatırla</span>
+          </label>
+          <a href="#" class="link">Parolanı mı unuttun?</a>
+        </div>
+
+        <div id="formMessage" class="message" role="alert" aria-live="polite"></div>
+
+        <button id="submitButton" type="submit" class="button" aria-busy="false">Giriş Yap</button>
+      </form>
+
+      <p class="fine-print">Test için kullanıcı adı: <strong>demo</strong>, parola: <strong>demo123</strong></p>
+    </section>
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+</html>
+
+
