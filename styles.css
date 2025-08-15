@@ -40,7 +40,7 @@ body {
 
 .card {
   width: 100%;
-  max-width: 380px;
+  max-width: 440px;
   background-color: rgba(12, 18, 32, .75);
   backdrop-filter: blur(6px);
   border: 1px solid #1f2937;
