@@ -15,3 +15,4 @@ Bu depo, saf HTML/CSS ve JavaScript ile yazılmış basit bir giriş sayfası ö
 - Basit, modern arayüz ve mobil uyumlu tasarım
 
 Sunucu tarafı yoktur; doğrulama istemci tarafında demodur.
+-değişiklik yapıldı
